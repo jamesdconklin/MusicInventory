@@ -1,0 +1,12 @@
+<table border="2px">
+  <tr>
+    <% obj.attributes.keys.each do |col| %>
+      <%= "<th>#{col}</th>".html_safe %>
+    <% end %>
+  </tr>
+  <tr>
+    <% obj.attributes.values.each do |val| %>
+      <%= "<th>#{h(val)}</th>".html_safe %>
+    <% end %>
+  </tr>
+</table>
